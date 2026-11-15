@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARIA Example</title>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form>
+
+        <!-- Username -->
+        <label for="username">Username:</label>
+
+        <input
+            type="text"
+            id="username"
+            aria-label="Enter your username"
+            required
+        >
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+
+        <input
+            type="password"
+            id="password"
+            required
+            aria-describedby="passwordInfo"
+        >
+
+        <p id="passwordInfo">
+            Password must contain at least 8 characters.
+        </p>
+
+        <br>
+
+        <!-- Login Button -->
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</body>
+</html>
