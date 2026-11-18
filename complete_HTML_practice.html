@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 1. HTML Document Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2. Page Title -->
+    <title>Complete HTML Practice - Omkar</title>
+
+    <!-- 3. Meta Description -->
+    <meta name="description" content="Complete HTML Practice">
+
+    <!-- 4. Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 5. Heading Tags -->
+    <section>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </section>
+
+    <!-- 6. Paragraph and Line Break -->
+    <section>
+        <p>This is a paragraph.</p>
+        First Line<br>
+        Second Line
+        <hr>
+    </section>
+
+    <!-- 7. Text Formatting Tags -->
+    <section>
+        <b>Bold Text</b><br>
+        <strong>Important Text</strong><br>
+        <i>Italic Text</i><br>
+        <em>Emphasized Text</em><br>
+        <u>Underline Text</u><br>
+        <mark>Highlighted Text</mark><br>
+        <small>Small Text</small><br>
+        <del>Deleted Text</del><br>
+        <ins>Inserted Text</ins><br>
+        H<sub>2</sub>O<br>
+        X<sup>2</sup>
+    </section>
+
+    <!-- 8. HTML Links -->
+    <section>
+        <a href="https://www.google.com">Google</a><br>
+        <a href="https://www.google.com" target="_blank">
+            Open Google in New Tab
+        </a>
+    </section>
+
+    <!-- 9. Images -->
+    <section>
+        <img src="image.jpg" alt="Sample Image" width="200">
+    </section>
+
+    <!-- 10. Ordered List -->
+    <section>
+        <h2>Ordered List</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+
+    <!-- 11. Unordered List -->
+    <section>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+    </section>
+
+    <!-- 12. Description List -->
+    <section>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </section>
+
+    <!-- 13. HTML Table -->
+    <section>
+        <table border="1" cellpadding="10">
+            <caption>Student Details</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Omkar</td>
+                    <td>BCA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rahul</td>
+                    <td>BBA</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Students: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- 14. HTML Form -->
+    <section>
+        <h2>Registration Form</h2>
+
+        <form action="#" method="post">
+
+            <!-- Text Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter Name" required>
+            <br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br><br>
+
+            <!-- Number Input -->
+            <input type="number" min="1" max="100">
+            <br><br>
+
+            <!-- Date Input -->
+            <input type="date">
+            <br><br>
+
+            <!-- Radio Button -->
+            Gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <br><br>
+
+            <!-- Checkbox -->
+            Skills:
+            <input type="checkbox" value="Java"> Java
+            <input type="checkbox" value="HTML"> HTML
+            <br><br>
+
+            <!-- Dropdown / Select -->
+            <select name="course">
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select>
+            <br><br>
+
+            <!-- Textarea -->
+            <textarea rows="4" cols="30"
+                      placeholder="Enter Message"></textarea>
+            <br><br>
+
+            <!-- File Upload -->
+            <input type="file">
+            <br><br>
+
+            <!-- Submit and Reset -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+
+    <!-- 15. HTML Semantic Tags -->
+    <section>
+        <header>Website Header</header>
+        <nav>Home | About | Contact</nav>
+        <main>
+            <article>
+                <h2>Article Title</h2>
+                <p>Article Content</p>
+            </article>
+
+            <aside>Sidebar Content</aside>
+        </main>
+        <footer>Website Footer</footer>
+    </section>
+
+    <!-- 16. HTML Audio -->
+    <section>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- 17. HTML Video -->
+    <section>
+        <video width="300" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!-- 18. HTML Iframe -->
+    <section>
+        <iframe
+            src="https://www.example.com"
+            width="300"
+            height="200"
+            title="Example Website">
+        </iframe>
+    </section>
+
+    <!-- 19. HTML Progress Bar -->
+    <section>
+        <label>Course Progress:</label>
+        <progress value="70" max="100"></progress>
+    </section>
+
+    <!-- 20. HTML Meter -->
+    <section>
+        <label>Skill Level:</label>
+        <meter value="8" min="0" max="10"></meter>
+    </section>
+
+    <!-- 21. Details and Summary -->
+    <section>
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML is used to create web pages.</p>
+        </details>
+    </section>
+
+    <!-- 22. HTML Code and Preformatted Text -->
+    <section>
+        <pre>
+            This is preformatted text.
+            Spaces are preserved.
+        </pre>
+
+        <code>
+            System.out.println("Hello World");
+        </code>
+    </section>
+
+    <!-- 23. HTML Entities -->
+    <section>
+        Copyright: &copy;<br>
+        Trademark: &trade;<br>
+        Registered: &reg;<br>
+        Less Than: &lt;<br>
+        Greater Than: &gt;<br>
+        Ampersand: &amp;
+    </section>
+
+    <!-- 24. HTML Button -->
+    <section>
+        <button type="button" onclick="alert('Hello Omkar!')">
+            Click Me
+        </button>
+    </section>
+
+    <!-- 25. HTML Accessibility (ARIA) -->
+    <section>
+        <button aria-label="Close Menu">X</button>
+
+        <div role="alert">
+            This is an important message.
+        </div>
+
+        <input type="text"
+               aria-describedby="helpText">
+
+        <p id="helpText">Enter your full name.</p>
+    </section>
+
+    <!-- 26. HTML Data List -->
+    <section>
+        <input list="languages" placeholder="Choose Language">
+
+        <datalist id="languages">
+            <option value="Java">
+            <option value="Python">
+            <option value="JavaScript">
+        </datalist>
+    </section>
+
+    <!-- 27. HTML Fieldset and Legend -->
+    <section>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name:</label>
+            <input type="text">
+        </fieldset>
+    </section>
+
+    <!-- 28. HTML Output -->
+    <section>
+        <form oninput="result.value =
+            Number(a.value) + Number(b.value)">
+            <input type="number" id="a" value="10">
+            +
+            <input type="number" id="b" value="20">
+            =
+            <output name="result">30</output>
+        </form>
+    </section>
+
+    <!-- 29. HTML Template -->
+    <section>
+        <template id="myTemplate">
+            <p>This content is inside a template.</p>
+        </template>
+    </section>
+
+    <!-- 30. Footer -->
+    <footer>
+        <p>Notes by Omkar | Complete HTML Practice</p>
+    </footer>
+
+</body>
+</html>
